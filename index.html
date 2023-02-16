@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do tempo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./image/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body data-body>
+    <main class="container" data-container>
+        <h1 class="container__titulo">Previsão do tempo</h1>
+        <form class="container__form">
+            <input class="form__input" type="text" name="search" placeholder="Digite a cidade" required data-input>
+            <button class="form__button" data-botao>
+                <i class="fa-solid fa-magnifying-glass form__button__content"></i>
+            </button>
+        </form>
+        <p class="container__texto">Codificado por <a class="texto__link" href="https://github.com/EduardoBraz1" target="_blank">Eduardo Santos Braz</a></p>
+        <!-- <h1 class="container__titulo">Clima na cidade - <span data-titulo-cidade></span></h1>
+        <h2 class="container__temperatura">26°c</h2>
+        <div class="container__clima">
+            <img class="clima__img" src="http://openweathermap.org/img/wn/11d@2x.png" alt="icone do clima">
+            <p class="clima__titulo">Nublado</p>
+        </div>
+        <p class="container__umidade">Umidade: 45%</p>
+        <p class="container__descricao">Descrição: garoa de intensidade leve</p> -->
+    </main>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/alterarFundo.js" defer></script>
+</body>
+
+</html>

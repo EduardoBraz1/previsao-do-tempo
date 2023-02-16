@@ -1,0 +1,128 @@
+@charset "UTF-8";
+html, body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: url(../../image/Bairro_dos_jardins_em_são_paulo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f9f9f9;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container {
+  max-width: 760px;
+  background: linear-gradient(0deg, #000000, #000000), #000000;
+  opacity: 0.8;
+  border-radius: 2rem;
+  padding: 2.5rem 2.5rem;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+body .container .container__form {
+  border: 2px solid linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #585858;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #585858;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+body .container .container__form .form__input {
+  border: none;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #585858;
+  width: 100%;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #f9f9f9;
+}
+body .container .container__form .form__input:focus {
+  outline: none;
+  padding-left: 1rem;
+}
+body .container .container__form .form__input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+body .container .container__form .form__input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+body .container .container__form .form__button {
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
+  padding: 0 0.6rem;
+  cursor: pointer;
+}
+body .container .container__form .form__button .form__button__content {
+  font-size: 1.2rem;
+}
+body .container .container__form .form__button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f9f9f9;
+}
+body .container .container__texto {
+  font-size: 0.8rem;
+  text-align: center;
+}
+body .container .container__texto .texto__link {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+}
+body .container .container__titulo {
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+body .container .container__temperatura {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+body .container .container__clima {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+body .container .container__clima .clima__img {
+  width: 40px;
+}
+body .container .container__clima .clima__titulo {
+  font-size: 1rem;
+}
+body .container .container__umidade {
+  margin-bottom: 0.5rem;
+}
+body .container .container__botao-recarregar {
+  max-width: 70%;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
+}
+body .container .container__botao-recarregar:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #f9f9f9;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+@import './variaveis';
+
+html, body {
+    font-family: $fonte;
+    font-weight: 500;
+    background: url(../../image/Bairro_dos_jardins_em_são_paulo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $branco;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
