@@ -19,9 +19,6 @@ async function pegaCoordenadas(cidadeInput, chave, container) {
     try {
         let pegaLink = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cidadeInput}&limit=1&appid=${chave}`);
         let linkConvertido = await pegaLink.json();
-        if(linkConvertido.erro) {
-            throw Error('Não encontrado, tente novamente');
-        }
 
         let latitude = linkConvertido[0].lat;
         let longitude = linkConvertido[0].lon;
@@ -29,7 +26,7 @@ async function pegaCoordenadas(cidadeInput, chave, container) {
         conectaAPI(latitude, longitude, container, cidadeInput, chave);
 
     } catch (erro) {
-        alert(erro);
+        alert(erro.name,':', erro.code);
     }
 }
 
@@ -38,9 +35,6 @@ async function conectaAPI(latitude, longitude, container, cidadeInput, chave) {
     try {
         let conexao = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=pt_br&appid=${chave}&units=metric`);
         let conexaoConvertida = await conexao.json();
-        if(conexaoConvertida.erro) {
-            throw Error('Não encontrado, tente novamente');
-        }
 
         let temperatura = conexaoConvertida.main.temp.toFixed(0);
         let descricao = conexaoConvertida.weather[0].description;
@@ -51,7 +45,7 @@ async function conectaAPI(latitude, longitude, container, cidadeInput, chave) {
         mostraDados(container, cidadeInput, temperatura, icon, descricao, umidade, sensacaoTermica);
 
     } catch (erro) {
-        alert(erro);
+        alert(erro.name,':', erro.code);
     }
 }
 

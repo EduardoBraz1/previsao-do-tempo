@@ -12,9 +12,6 @@ async function pegaApiFoto(cidadeInput, chaveApiImagem, bodyPrincipal) {
     try {
         let conexao = await fetch(`https://pixabay.com/api/?q=${cidadeInput}&lang=pt&image_type=photo&per_page=3&category=citys&key=${chaveApiImagem}`);
         let conexaoConvertida = await conexao.json();
-        if(conexaoConvertida.erro) {
-            throw Error('Não encontrado, tente novamente');
-        }
 
         const imagemApi = conexaoConvertida.hits[0].webformatURL;
 
@@ -23,6 +20,6 @@ async function pegaApiFoto(cidadeInput, chaveApiImagem, bodyPrincipal) {
         bodyPrincipal.style.backgroundRepeat = 'no-repeat';
 
     } catch (erro) {
-        alert(erro);
+        console.log(erro.name,':', erro.code);
     }
 }
