@@ -19,7 +19,7 @@
 ### Links
 
 - Repositorio: [Clique aqui para o Repositorio](https://github.com/EduardoBraz1/previsao-do-tempo)
-- Deploy: [Clique aqui para ir ao deploy](https://classificar-atendimento.netlify.app/)
+- Deploy: [Clique aqui para ir ao deploy](https://eduardo-previsao-do-tempo.netlify.app/)
 
 ## Meu processo
 
